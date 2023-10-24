@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@draco-china/commitlint"
+  ]
+}

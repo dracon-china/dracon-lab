@@ -16,12 +16,18 @@
   "scripts": {
     "build": "nx run-many -t build",
     "clean": "lerna clean --yes",
+    "commit": "git-cz",
     "deps": "pnpm up -i -r -L",
+    "format": "prettier -c --write \"**/*\"",
     "lint": "nx run-many -t lint",
     "publish": "lerna publish && nx graph --file=apps/graph/index.html",
     "test": "nx run-many -t test"
   },
   "devDependencies": {
+    "@draco-china/commitlint": "workspace:^",
+    "@draco-china/eslint": "workspace:^",
+    "@draco-china/prettier": "workspace:^",
+    "@draco-china/stylelint": "workspace:^",
     "@draco-china/tsconfig": "workspace:^",
     "lerna": "^7.4.1",
     "nx": "^17.0.1",
