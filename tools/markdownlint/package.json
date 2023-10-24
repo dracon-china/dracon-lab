@@ -17,8 +17,14 @@
     "email": "draco.coder@gmail.com"
   },
   "main": "index.json",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.mjs"
+  },
   "dependencies": {
     "markdownlint": "^0.31.1"
+  },
+  "devDependencies": {
+    "execa": "^8.0.1"
   },
   "publishConfig": {
     "access": "public",
