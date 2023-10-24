@@ -1,0 +1,38 @@
+{
+  "name": "@draco-china/prettier",
+  "version": "0.0.0",
+  "description": "Standard shareable config for Prettier",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/prettier#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/prettier"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "draco-china",
+    "email": "draco.coder@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.mjs"
+  },
+  "dependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.6"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "authors": [
+    {
+      "name": "draco-china",
+      "email": "draco.coder@gmail.com"
+    }
+  ]
+}
