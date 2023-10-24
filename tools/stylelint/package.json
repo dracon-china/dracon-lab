@@ -1,0 +1,52 @@
+{
+  "name": "@draco-china/stylelint",
+  "version": "0.0.0",
+  "description": "Standard shareable config for Stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "stylelint-config-standard"
+  ],
+  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/stylelint#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/stylelint"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "draco-china",
+    "email": "draco.coder@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.mjs",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "postcss": "^8.4.31",
+    "postcss-html": "^1.5.0",
+    "postcss-less": "^6.0.0",
+    "postcss-safe-parser": "^7.0.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^15.10.3",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^0.34.6",
+    "execa": "^8.0.1",
+    "vitest": "^0.34.6"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "authors": [
+    {
+      "name": "draco-china",
+      "email": "draco.coder@gmail.com"
+    }
+  ]
+}
