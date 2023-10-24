@@ -22,6 +22,7 @@
     "test": "nx run-many -t test"
   },
   "devDependencies": {
+    "@draco-china/tsconfig": "workspace:^",
     "lerna": "^7.4.1",
     "nx": "^17.0.1",
     "nx-cloud": "^16.5.2"
