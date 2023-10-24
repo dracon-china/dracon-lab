@@ -1,0 +1,50 @@
+{
+  "name": "@draco-china/eslint",
+  "version": "0.0.0",
+  "description": "Standard shareable config for ESLint",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/eslint#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/eslint"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "draco-china",
+    "email": "draco.coder@gmail.com"
+  },
+  "main": "javascript/index.js",
+  "dependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/eslint-parser": "^7.22.15",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-ali": "^14.0.2",
+    "eslint-config-egg": "^13.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-ali": "^1.0.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-plus": "^0.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "vue-eslint-parser": "^9.3.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "authors": [
+    {
+      "name": "draco-china",
+      "email": "draco.coder@gmail.com"
+    }
+  ]
+}
