@@ -1,0 +1,45 @@
+{
+  "name": "@draco-china/commitlint",
+  "version": "0.0.0",
+  "description": "Standard shareable config for ESLint Commitlint",
+  "keywords": [
+    "commitlint",
+    "commitlint-config"
+  ],
+  "homepage": "https://github.com/draco-china/draco-lab/blob/main/spec/commitlint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draco-china/draco-lab/blob/main/spec/commitlint-config"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "draco-china",
+    "email": "draco.coder@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.mjs"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
+    "@commitlint/cz-commitlint": "^18.0.0",
+    "commitizen": "^4.3.0",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2"
+  },
+  "devDependencies": {
+    "execa": "^8.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "authors": [
+    {
+      "name": "draco-china",
+      "email": "draco.coder@gmail.com"
+    }
+  ]
+}
