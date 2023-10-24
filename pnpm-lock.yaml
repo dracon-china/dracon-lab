@@ -14,6 +14,9 @@ importers:
       '@draco-china/eslint':
         specifier: workspace:^
         version: link:tools/eslint
+      '@draco-china/markdownlint':
+        specifier: workspace:^
+        version: link:tools/markdownlint
       '@draco-china/prettier':
         specifier: workspace:^
         version: link:tools/prettier
@@ -127,6 +130,10 @@ importers:
       markdownlint:
         specifier: ^0.31.1
         version: 0.31.1
+    devDependencies:
+      execa:
+        specifier: ^8.0.1
+        version: 8.0.1
 
   tools/prettier:
     dependencies:

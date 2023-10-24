@@ -26,6 +26,7 @@
   "devDependencies": {
     "@draco-china/commitlint": "workspace:^",
     "@draco-china/eslint": "workspace:^",
+    "@draco-china/markdownlint": "workspace:^",
     "@draco-china/prettier": "workspace:^",
     "@draco-china/stylelint": "workspace:^",
     "@draco-china/tsconfig": "workspace:^",
