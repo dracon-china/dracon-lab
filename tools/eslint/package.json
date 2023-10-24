@@ -17,6 +17,9 @@
     "email": "draco.coder@gmail.com"
   },
   "main": "javascript/index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.mjs"
+  },
   "dependencies": {
     "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
@@ -36,6 +39,9 @@
     "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-vue": "^9.17.0",
     "vue-eslint-parser": "^9.3.2"
+  },
+  "devDependencies": {
+    "execa": "^8.0.1"
   },
   "publishConfig": {
     "access": "public",
