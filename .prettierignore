@@ -71,14 +71,12 @@ yarn-error.log*
 .umi-production
 
 # dumi
-.dumi
+.dumi/*
+!.dumi/theme
 
-# Images
-*.svg
-*.ico
 
 # Others
 LICENSE
-.*rc
-*ignore
+.npmrc
 .editorconfig
+.*ignore
