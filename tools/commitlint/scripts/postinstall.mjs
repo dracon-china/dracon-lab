@@ -36,19 +36,12 @@ import { join } from 'path';
   if (!existsSync(join(cwd, '.lintstagedrc'))) {
     writeFileSync(
       join(cwd, '.lintstagedrc'),
-      JSON.stringify(
-        {
-          '*.{md,json}': ['prettier --write --no-error-on-unmatched-pattern'],
-          '*.{css,less,scss,vue,html}': [
-            'stylelint --fix  --allow-empty-input',
-            'prettier --write',
-          ],
-          '*.{js,jsx}': ['eslint --fix', 'prettier --write'],
-          '*.{ts,tsx}': ['eslint --fix', 'prettier --parser=typescript --write'],
-        },
-        null,
-        2,
-      ),
+      `{
+  "*.{md,json}": ["prettier --write --no-error-on-unmatched-pattern"],
+  "*.{css,less,scss,vue,html}": ["stylelint --fix --allow-empty-input", "prettier --write"],
+  "*.{js,jsx}": ["eslint --fix", "prettier --write"],
+  "*.{ts,tsx}": ["eslint --fix", "prettier --parser=typescript --write"]
+}`,
     );
   }
 
@@ -56,13 +49,9 @@ import { join } from 'path';
   if (!existsSync(join(cwd, '.commitlintrc'))) {
     writeFileSync(
       join(cwd, '.commitlintrc'),
-      JSON.stringify(
-        {
-          extends: ['@draco-china/commitlint'],
-        },
-        null,
-        2,
-      ),
+      `{
+  extends: ['@draco-china/commitlint']
+}`,
     );
   }
 })();

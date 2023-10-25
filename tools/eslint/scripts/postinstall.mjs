@@ -11,7 +11,7 @@ import { join } from 'path';
     writeFileSync(
       join(cwd, '.eslintrc.js'),
       `module.exports = {
-  require('@draco-china/eslint');
+  ...require('@draco-china/eslint'),
   ignorePatterns: ['.eslintrc.js'],
 }`,
     );

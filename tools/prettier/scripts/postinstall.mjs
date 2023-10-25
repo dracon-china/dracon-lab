@@ -41,14 +41,11 @@ trim_trailing_whitespace = false
       join(cwd, '.prettierignore'),
       `${gitignore}
 
-# Images
-*.svg
-*.ico
-
 # Others
-.*rc
-*ignore
+LICENSE
+.npmrc
 .editorconfig
+.*ignore
 `,
     );
   }
