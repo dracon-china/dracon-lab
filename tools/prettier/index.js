@@ -17,5 +17,17 @@ module.exports = {
         proseWrap: 'preserve',
       },
     },
+    {
+      files: '*.svg',
+      options: {
+        parser: 'html',
+      },
+    },
+    {
+      files: ['.commitlintrc', '.lintstagedrc', '.stylelintrc'],
+      options: {
+        parser: 'json',
+      },
+    },
   ],
 };
