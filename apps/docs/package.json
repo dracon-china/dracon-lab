@@ -1,0 +1,31 @@
+{
+  "name": "@draco-china/docs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/draco-china/draco-lab/blob/main/apps/docs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draco-china/draco-lab/blob/main/apps/docs"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "draco-china",
+    "email": "draco.coder@gmail.com"
+  },
+  "scripts": {
+    "build": "dumi build",
+    "start": "dumi dev"
+  },
+  "devDependencies": {
+    "@giscus/react": "^2.3.0",
+    "dumi": "^2.2.14",
+    "dumi-theme-antd-style": "^0.29.5"
+  },
+  "authors": [
+    {
+      "name": "draco-china",
+      "email": "draco.coder@gmail.com"
+    }
+  ]
+}
