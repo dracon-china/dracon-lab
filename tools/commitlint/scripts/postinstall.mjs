@@ -3,7 +3,7 @@ import { existsSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 (async function main() {
-  const cwd = process.env.PWD;
+  const cwd = process.env.INIT_CWD;
   const options = {
     cwd,
     stdio: 'inherit',

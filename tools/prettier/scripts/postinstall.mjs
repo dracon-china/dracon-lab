@@ -2,7 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 (async function main() {
-  const cwd = process.env.PWD;
+  const cwd = process.env.INIT_CWD;
   // 是否安装了 prettier
   if (!existsSync(join(cwd, 'node_modules/prettier'))) return console.error('请先安装 prettier');
   // 是否存在 .prettierrc.js 文件

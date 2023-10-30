@@ -3,7 +3,7 @@ import { existsSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 (async function main() {
-  const cwd = process.env.PWD;
+  const cwd = process.env.INIT_CWD;
   // 是否安装了 eslint
   if (!existsSync(join(cwd, 'node_modules/eslint'))) return console.error('请先安装 eslint');
   // 是否存在 .eslintrc 文件
