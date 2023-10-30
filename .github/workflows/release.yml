@@ -7,9 +7,10 @@ on:
   pull_request:
     types:
       - closed
-    paths-ignore:
-      - 'apps/**'
-      - '**/*.md'
+    paths:
+      - '**'
+      - '!apps/**'
+      - '!**/*.md'
 
   # push:
   #   branches:
@@ -25,27 +26,31 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Cache pnpm store and .node_modules
-        uses: actions/cache@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          path: |
-            ~/.pnpm-store
-            node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+          version: latest
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-node-pnpm-store-cache
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
         run: pnpm install
@@ -94,8 +99,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config --global user.name "Draco"
+          git config --global user.email "draco.coder@gmail.com"
 
       - name: Publish to GitHub Package Registry
         run: pnpm run publish
