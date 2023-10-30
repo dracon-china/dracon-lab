@@ -21,7 +21,7 @@
     "docs:build": "nx run @draco-china/docs:build",
     "docs:start": "nx run @draco-china/docs:start",
     "format": "prettier -c --write \"**/*\"",
-    "graph:build": "nx graph --file=apps/docs/dist/graph/index.html",
+    "graph:build": "nx graph --file=apps/graph/index.html",
     "graph:start": "nx graph",
     "lint": "nx run-many -t lint",
     "release": "lerna publish",
