@@ -19,9 +19,9 @@ export default memo(() => {
         mapping="title"
         reactionsEnabled="1"
         category="Q&A"
-        categoryId="DIC_kwDOJHSocc4CabCa"
+        categoryId="DIC_kwDOKlvNcs4Cae6g"
         repo="draco-china/draco-lab"
-        repoId="R_kgDOJHSocQ"
+        repoId="R_kgDOKlvNcg"
         theme={isDarkMode ? 'dark_protanopia' : 'light_protanopia'}
         {...giscus}
       />
