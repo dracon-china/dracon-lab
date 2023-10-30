@@ -5,17 +5,18 @@
   "npmClient": "pnpm",
   "command": {
     "version": {
-      "allowBranch": "main",
-      "amend": true,
-      "conventionalCommits": true,
+      "allowBranch": ["main"],
+      "amend": false,
       "exact": true,
+      "yes": true,
       "message": "chore(release): publish",
-      "gitTagVersion": false,
-      "forceGitTag": true,
-      "yes": true
+      "conventionalCommits": true
     },
     "publish": {
-      "registry": "https://npm.pkg.github.com/"
+      "registry": "https://npm.pkg.github.com"
+    },
+    "clean": {
+      "yes": true
     }
   },
   "changelogPreset": {

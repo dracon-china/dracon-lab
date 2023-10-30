@@ -15,13 +15,18 @@
   },
   "scripts": {
     "build": "nx run-many -t build",
-    "clean": "lerna clean --yes",
+    "clean": "lerna clean --yes && rm -rf node_modules",
     "commit": "git-cz",
     "deps": "pnpm up -i -r -L",
+    "docs:build": "nx run @draco-china/docs:build",
+    "docs:start": "nx run @draco-china/docs:start",
     "format": "prettier -c --write \"**/*\"",
+    "graph:build": "nx graph --file=apps/docs/dist/graph/index.html",
+    "graph:start": "nx graph",
     "lint": "nx run-many -t lint",
-    "publish": "lerna publish && nx graph --file=apps/graph/index.html",
-    "test": "nx run-many -t test"
+    "release": "lerna publish",
+    "test": "nx run-many -t test",
+    "test:coverage": "nx run-many -t test:coverage"
   },
   "devDependencies": {
     "@draco-china/commitlint": "workspace:^",
@@ -30,8 +35,9 @@
     "@draco-china/prettier": "workspace:^",
     "@draco-china/stylelint": "workspace:^",
     "@draco-china/tsconfig": "workspace:^",
+    "conventional-changelog-gitmoji-config": "^1.5.2",
     "lerna": "^7.4.1",
-    "nx": "^17.0.1",
+    "nx": "^17.0.2",
     "nx-cloud": "^16.5.2"
   },
   "publishConfig": {
