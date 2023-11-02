@@ -74,6 +74,13 @@ yarn-error.log*
 .dumi/*
 !.dumi/theme
 
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.svg
 
 # Others
 LICENSE
