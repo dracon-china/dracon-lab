@@ -7,13 +7,12 @@ const themeConfig: Partial<SiteThemeConfig> = {
   hero: {
     actions: [
       {
-        link: '/resume',
-        text: '关于我',
+        link: '/ai/programming-tools',
+        text: 'AI 导航',
       },
       {
-        link: 'https://github.com/draco-china/draco-lab',
-        text: 'GitHub',
-        openExternal: true,
+        link: '/resume',
+        text: '关于我',
       },
     ],
     features: [
