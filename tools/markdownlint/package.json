@@ -1,6 +1,6 @@
 {
   "name": "@draco-china/markdownlint",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Standard shareable config for Markdownlint.",
   "keywords": [
     "markdownlint",
