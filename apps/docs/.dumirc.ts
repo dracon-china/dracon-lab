@@ -17,22 +17,19 @@ const themeConfig: Partial<SiteThemeConfig> = {
     ],
     features: [
       {
+        title: 'AI 导航',
+        image: '🤖',
+        description: 'AI 导航，帮助你快速找到你想要的 AI 工具',
+      },
+      {
         title: '内容丰富',
         image: '🌈',
-        description:
-          '提供基础知识的介绍和使用示例，还包括深入的概念讲解、最佳实践和常见问题解答，帮助你更好地理解和应用这些技术',
+        description: '内容丰富，包含 AI 工具导航、组件库、工具类、Hooks、开发环境、规范配置等文档',
       },
       {
         title: '全文搜索',
         image: '🔍',
-        description:
-          '让你可以轻松搜索标题、正文、示例代码等内容。无论你是在寻找特定的组件用法、工具类的代码片段，还是查找特定主题的教程和解决方案，都可以通过多关键词搜索快速找到需要的信息',
-      },
-      {
-        title: '学习资源',
-        image: '📚',
-        description:
-          '提供丰富的学习资源。无论你是想深入学习 JavaScript、Vue、React、Node.j，还是了解小程序、Flutter、Deno、HTML、CSS 等技术',
+        description: '支持全文搜索，帮助你快速找到你想要的内容',
       },
     ],
   },
@@ -73,8 +70,8 @@ const themeConfig: Partial<SiteThemeConfig> = {
 
 export default defineConfig({
   fastRefresh: true,
-  hash: true,
-  codeSplitting: { jsStrategy: 'granularChunks' },
+  // hash: true,
+  // codeSplitting: { jsStrategy: 'granularChunks' },
   resolve: {
     docDirs: ['src'],
     atomDirs: [
