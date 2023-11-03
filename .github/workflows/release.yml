@@ -95,7 +95,7 @@ jobs:
             ${{ runner.os }}-node-pnpm-store-cache
 
       - name: Build
-        run: pnpm run build
+        run: pnpm build
 
       - name: Configure Git
         run: |
@@ -103,7 +103,7 @@ jobs:
           git config --global user.email "draco.coder@gmail.com"
 
       - name: Publish to GitHub Package Registry
-        run: pnpm run publish
+        run: pnpm release
         env:
           NODE_AUTH_TOKEN: ${{ env.GITHUB_TOKEN }}
 

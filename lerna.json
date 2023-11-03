@@ -8,9 +8,10 @@
       "allowBranch": ["main"],
       "amend": false,
       "exact": true,
-      "yes": true,
+      "forceGitTag": true,
       "message": "chore(release): publish",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "yes": true
     },
     "publish": {
       "registry": "https://npm.pkg.github.com"
@@ -20,6 +21,7 @@
     }
   },
   "changelogPreset": {
+    "header": "# 更新日志\n\n",
     "name": "conventionalcommits",
     "types": [
       {
