@@ -66,6 +66,10 @@ const themeConfig: Partial<SiteThemeConfig> = {
     tocWidth: 176,
     contentMaxWidth: 960,
   },
+  socialLinks: {
+    github: 'https://github.com/draco-china/draco-lab',
+  },
+  github: 'https://github.com/draco-china/draco-lab',
 };
 
 export default defineConfig({
@@ -73,7 +77,13 @@ export default defineConfig({
   // hash: true,
   // codeSplitting: { jsStrategy: 'granularChunks' },
   resolve: {
-    docDirs: ['src'],
+    docDirs: [
+      'src',
+      {
+        type: 'tools',
+        dir: '../../tools',
+      },
+    ],
     atomDirs: [
       {
         type: 'apps',
@@ -92,13 +102,10 @@ export default defineConfig({
   outputPath: 'dist',
   favicons: ['/logo.svg'],
   themeConfig: {
+    ...themeConfig,
+    // ssr: {},
     prefersColor: { default: 'auto' },
-    socialLinks: {
-      github: 'https://github.com/draco-china/draco-lab',
-    },
-    ssr: {},
     sitemap: { hostname: 'https://draco.icu' },
-    github: 'https://github.com/draco-china/draco-lab',
     sidebar: {
       '/tools': [
         {
@@ -132,6 +139,5 @@ export default defineConfig({
         },
       ],
     },
-    ...themeConfig,
   },
 });

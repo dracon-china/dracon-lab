@@ -1,0 +1,29 @@
+diff --git a/dist/features/tabs.js b/dist/features/tabs.js
+index 074e5f37db4d5ae125a62a4a8d6e460967bf98b6..e4e685ddf3f99bc5e2aa6edee0929ef6a62652d0 100644
+--- a/dist/features/tabs.js
++++ b/dist/features/tabs.js
+@@ -40,12 +40,14 @@ var import_path = __toESM(require("path"));
+ var import_plugin_utils = require("umi/plugin-utils");
+ var import_meta = require("./meta");
+ function isTabRouteFile(file) {
+-  return file.includes("$tab-");
++  return file.includes('$tab-') || file.includes('CHANGELOG');
+ }
+ function getTabKeyFromFile(file) {
++  if (file.includes('CHANGELOG')) return 'changelog';
+   return file.match(/\$tab-([^.]+)/)[1];
+ }
+ function getHostForTabRouteFile(file) {
++  if (file.includes('CHANGELOG')) return file.replace('CHANGELOG', 'README');
+   return file.replace(/\$tab-[^.]+\./, "");
+ }
+ var tabs_default = (api) => {
+@@ -72,7 +74,7 @@ var tabs_default = (api) => {
+         const rtlFile = (0, import_plugin_utils.winPath)(import_path.default.relative(api.cwd, route.file));
+         const routeId = (0, import_utils.createRouteId)(rtlFile);
+         const tabKey = getTabKeyFromFile(rtlFile);
+-        const parentFile = route.file.replace(/\$tab-[^.]+\./, "");
++        const parentFile = getHostForTabRouteFile(route.file);
+         tabs.push({
+           index: tabs.length,
+           key: tabKey,
