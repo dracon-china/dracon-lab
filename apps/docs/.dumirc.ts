@@ -74,58 +74,25 @@ const themeConfig: Partial<SiteThemeConfig> = {
 
 const isProd = process.env.NODE_ENV === 'production';
 
-const productionConfig = isProd
-  ? {
-      externals: {
-        react: 'React',
-        'react-dom': 'ReactDOM',
-        dayjs: 'dayjs',
-        '^/antd/.*': 'antd',
-        lodash: '_',
-        prismjs: 'Prism',
-      },
-      headScripts: [
-        'https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js',
-        'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js',
-        'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js',
-        'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/antd.min.js',
-        'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js',
-        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js',
-      ],
-      styles: [
-        // 'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/reset.min.css',
-        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css',
-      ],
-    }
-  : {
-      externals: {
-        react: 'React',
-        'react-dom': 'ReactDOM',
-        dayjs: 'dayjs',
-        '^/antd/.*': 'antd',
-        lodash: '_',
-        prismjs: 'Prism',
-      },
-      headScripts: [
-        'https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js',
-        'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js',
-        'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js',
-        'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/antd.min.js',
-        'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js',
-        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js',
-      ],
-      styles: [
-        // 'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/reset.min.css',
-        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css',
-      ],
-    };
+const ssrConfig = isProd && {
+  // svgr: {},
+  routePrefetch: {},
+  manifest: {},
+  // clientLoader: {},
+  ssr: {
+    // platform: 'vercel',
+  },
+  // apiRoute: {
+  //   platform: 'vercel',
+  // },
+};
 
 export default defineConfig({
   fastRefresh: true,
   hash: true,
   polyfill: false,
   codeSplitting: { jsStrategy: 'granularChunks' },
-  ...productionConfig,
+  ...ssrConfig,
   resolve: {
     docDirs: [
       'src',
@@ -153,7 +120,6 @@ export default defineConfig({
   favicons: ['/logo.svg'],
   themeConfig: {
     ...themeConfig,
-    // ssr: {},
     prefersColor: { default: 'auto' },
     sitemap: { hostname: 'https://draco.icu' },
     sidebar: {
