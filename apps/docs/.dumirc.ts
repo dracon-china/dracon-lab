@@ -72,10 +72,60 @@ const themeConfig: Partial<SiteThemeConfig> = {
   github: 'https://github.com/draco-china/draco-lab',
 };
 
+const isProd = process.env.NODE_ENV === 'production';
+
+const productionConfig = isProd
+  ? {
+      externals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+        dayjs: 'dayjs',
+        '^/antd/.*': 'antd',
+        lodash: '_',
+        prismjs: 'Prism',
+      },
+      headScripts: [
+        'https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js',
+        'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js',
+        'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js',
+        'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/antd.min.js',
+        'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js',
+        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js',
+      ],
+      styles: [
+        // 'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/reset.min.css',
+        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css',
+      ],
+    }
+  : {
+      externals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+        dayjs: 'dayjs',
+        '^/antd/.*': 'antd',
+        lodash: '_',
+        prismjs: 'Prism',
+      },
+      headScripts: [
+        'https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js',
+        'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js',
+        'https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js',
+        'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/antd.min.js',
+        'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js',
+        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js',
+      ],
+      styles: [
+        // 'https://cdn.jsdelivr.net/npm/antd@5.11.0/dist/reset.min.css',
+        'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css',
+      ],
+    };
+
 export default defineConfig({
   fastRefresh: true,
-  // hash: true,
-  // codeSplitting: { jsStrategy: 'granularChunks' },
+  hash: true,
+  polyfill: false,
+  codeSplitting: { jsStrategy: 'granularChunks' },
+  ...productionConfig,
   resolve: {
     docDirs: [
       'src',

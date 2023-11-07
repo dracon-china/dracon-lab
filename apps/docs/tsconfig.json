@@ -11,5 +11,5 @@
       "@@/*": [".dumi/tmp/*"]
     }
   },
-  "include": ["**/*"]
+  "include": ["**/*", ".dumirc.ts"]
 }

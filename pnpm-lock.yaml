@@ -31,9 +31,6 @@ importers:
       '@draco-china/tsconfig':
         specifier: workspace:^
         version: link:tools/tsconfig
-      dumi:
-        specifier: ^2.2.14
-        version: 2.2.14(patch_hash=ywmly5zwv7gx4gldk2dpzigdcm)(@babel/core@7.23.2)(eslint@8.52.0)(prettier@3.0.3)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
       lerna:
         specifier: ^7.4.2
         version: 7.4.2
@@ -186,7 +183,7 @@ importers:
         version: 4.0.9(postcss@8.4.31)
       stylelint:
         specifier: ^15.10.3
-        version: 15.11.0(typescript@5.2.2)
+        version: 15.11.0
       stylelint-config-html:
         specifier: ^1.1.0
         version: 1.1.0(postcss-html@1.5.0)(stylelint@15.11.0)
@@ -15609,7 +15606,7 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 15.11.0(typescript@5.2.2)
+      stylelint: 15.11.0
     dev: false
 
   /stylelint-config-recess-order@4.3.0(stylelint@15.11.0):
@@ -15617,7 +15614,7 @@ packages:
     peerDependencies:
       stylelint: '>=15'
     dependencies:
-      stylelint: 15.11.0(typescript@5.2.2)
+      stylelint: 15.11.0
       stylelint-order: 6.0.3(stylelint@15.11.0)
     dev: false
 
@@ -15627,7 +15624,7 @@ packages:
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 15.11.0(typescript@5.2.2)
+      stylelint: 15.11.0
     dev: false
 
   /stylelint-config-recommended@7.0.0(stylelint@14.16.1):
@@ -15653,7 +15650,7 @@ packages:
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 15.11.0(typescript@5.2.2)
+      stylelint: 15.11.0
       stylelint-config-recommended: 13.0.0(stylelint@15.11.0)
     dev: false
 
@@ -15664,7 +15661,7 @@ packages:
     dependencies:
       postcss: 8.4.31
       postcss-sorting: 8.0.2(postcss@8.4.31)
-      stylelint: 15.11.0(typescript@5.2.2)
+      stylelint: 15.11.0
     dev: false
 
   /stylelint@14.16.1:
@@ -15714,7 +15711,7 @@ packages:
       - supports-color
     dev: true
 
-  /stylelint@15.11.0(typescript@5.2.2):
+  /stylelint@15.11.0:
     resolution: {integrity: sha512-78O4c6IswZ9TzpcIiQJIN49K3qNoXTM8zEJzhaTE/xRTCZswaovSEVIa/uwbOltZrk16X4jAxjaOhzz/hTm1Kw==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true

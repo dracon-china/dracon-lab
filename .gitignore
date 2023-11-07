@@ -71,6 +71,5 @@ yarn-error.log*
 .umi-production
 
 # dumi
-.dumi/*
-.dumi/tmp-production
+.dumi
 !.dumi/theme
