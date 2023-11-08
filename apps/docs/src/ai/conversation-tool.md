@@ -52,18 +52,18 @@ group:
       <p style="margin: 0;">ChatGPT的最为有力的竞争对手之一</p>
     </div>
   </a>
-  <a href="https://www.doubao.com/" style="display:flex; align-items:center;">
-    <img src="./imgs/对话工具/豆包.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+  <a href="https://grok.x.ai/" style="display:flex; align-items:center;">
+    <img src="./imgs/对话工具/Grok.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
     <div>
-      <p style="margin: 0; font-weight: bold;">豆包</p>
-      <p style="margin: 0;">字节跳动最新推出的免费AI对话助手</p>
+      <p style="margin: 0; font-weight: bold;">Grok</p>
+      <p style="margin: 0;">马斯克旗下xAI推出的人工智能助手</p>
     </div>
   </a>
-  <a href="https://wukong.com/tool" style="display:flex; align-items:center;">
-    <img src="./imgs/对话工具/小悟空.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+  <a href="https://kimi.moonshot.cn/" style="display:flex; align-items:center;">
+    <img src="./imgs/对话工具/Kimi Chat.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
     <div>
-      <p style="margin: 0; font-weight: bold;">小悟空</p>
-      <p style="margin: 0;">字节跳动推出的免费AI对话助手和个人助理</p>
+      <p style="margin: 0; font-weight: bold;">Kimi Chat</p>
+      <p style="margin: 0;">月之暗面Moonshot AI推出的聊天机器人</p>
     </div>
   </a>
   <a href="https://qianwen.aliyun.com/" style="display:flex; align-items:center;">
@@ -73,11 +73,25 @@ group:
       <p style="margin: 0;">阿里巴巴推出的类ChatGPT响应人类指令的大模型，已免费开放</p>
     </div>
   </a>
+  <a href="https://www.doubao.com/" style="display:flex; align-items:center;">
+    <img src="./imgs/对话工具/豆包.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+    <div>
+      <p style="margin: 0; font-weight: bold;">豆包</p>
+      <p style="margin: 0;">字节跳动最新推出的免费AI对话助手</p>
+    </div>
+  </a>
   <a href="https://chatglm.cn/pureDisplay" style="display:flex; align-items:center;">
     <img src="./imgs/对话工具/智谱清言.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
     <div>
       <p style="margin: 0; font-weight: bold;">智谱清言</p>
       <p style="margin: 0;">智谱AI推出的生成式AI助手，基于ChatGLM 2</p>
+    </div>
+  </a>
+  <a href="https://wukong.com/tool" style="display:flex; align-items:center;">
+    <img src="./imgs/对话工具/小悟空.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+    <div>
+      <p style="margin: 0; font-weight: bold;">小悟空</p>
+      <p style="margin: 0;">字节跳动推出的免费AI对话助手和个人助理</p>
     </div>
   </a>
   <a href="https://yingshi-ai.com/" style="display:flex; align-items:center;">

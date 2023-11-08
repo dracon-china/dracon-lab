@@ -80,20 +80,6 @@ group:
       <p style="margin: 0;">复旦大学团队开发的对话式大型语言模型</p>
     </div>
   </a>
-  <a href="http://xinghuo.xfyun.cn/" style="display:flex; align-items:center;">
-    <img src="./imgs/训练模型/讯飞星火认知大模型.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
-    <div>
-      <p style="margin: 0; font-weight: bold;">讯飞星火认知大模型</p>
-      <p style="margin: 0;">科大讯飞推出的类ChatGPT的讯飞星火认知大模型</p>
-    </div>
-  </a>
-  <a href="https://chat.sensetime.com/wb/" style="display:flex; align-items:center;">
-    <img src="./imgs/训练模型/商量SenseChat.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
-    <div>
-      <p style="margin: 0; font-weight: bold;">商量SenseChat</p>
-      <p style="margin: 0;">商汤科技推出的类ChatGPT的人工智能大语言模型</p>
-    </div>
-  </a>
   <a href="https://cn.bing.com/search?q=DALL%C2%B7E%202&ensearch=1" style="display:flex; align-items:center;">
     <img src="./imgs/训练模型/DALL·E 2.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
     <div>
@@ -101,11 +87,11 @@ group:
       <p style="margin: 0;">OpenAI旗下DALL·E 2图像生成模型</p>
     </div>
   </a>
-  <a href="https://tiangong.kunlun.com/" style="display:flex; align-items:center;">
-    <img src="./imgs/训练模型/天工AI助手.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+  <a href="http://xinghuo.xfyun.cn/" style="display:flex; align-items:center;">
+    <img src="./imgs/训练模型/讯飞星火认知大模型.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
     <div>
-      <p style="margin: 0; font-weight: bold;">天工AI助手</p>
-      <p style="margin: 0;">昆仑万维与奇点智源联合研发的对标ChatGPT的大语言模型</p>
+      <p style="margin: 0; font-weight: bold;">讯飞星火认知大模型</p>
+      <p style="margin: 0;">科大讯飞推出的类ChatGPT的讯飞星火认知大模型</p>
     </div>
   </a>
   <a href="https://openai.com/blog/openai-codex" style="display:flex; align-items:center;">
@@ -113,6 +99,13 @@ group:
     <div>
       <p style="margin: 0; font-weight: bold;">Codex</p>
       <p style="margin: 0;">OpenAI旗下AI代码生成训练模型</p>
+    </div>
+  </a>
+  <a href="https://chat.sensetime.com/wb/" style="display:flex; align-items:center;">
+    <img src="./imgs/训练模型/商量SenseChat.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+    <div>
+      <p style="margin: 0; font-weight: bold;">商量SenseChat</p>
+      <p style="margin: 0;">商汤科技推出的类ChatGPT的人工智能大语言模型</p>
     </div>
   </a>
   <a href="https://wenxin.baidu.com/" style="display:flex; align-items:center;">
@@ -127,6 +120,13 @@ group:
     <div>
       <p style="margin: 0; font-weight: bold;">序列猴子</p>
       <p style="margin: 0;">出门问问推出的一款超大规模的语言模型</p>
+    </div>
+  </a>
+  <a href="https://tiangong.kunlun.com/" style="display:flex; align-items:center;">
+    <img src="./imgs/训练模型/天工AI助手.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
+    <div>
+      <p style="margin: 0; font-weight: bold;">天工AI助手</p>
+      <p style="margin: 0;">昆仑万维与奇点智源联合研发的对标ChatGPT的大语言模型</p>
     </div>
   </a>
   <a href="https://www.modelscope.cn/" style="display:flex; align-items:center;">

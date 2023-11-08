@@ -500,7 +500,7 @@ group:
       <p style="margin: 0;">AI SEO长内容创作</p>
     </div>
   </a>
-  <a href="https://www.bing.com/search?q=Mark%20Copy&ensearch=1" style="display:flex; align-items:center;">
+  <a href="https://cn.bing.com/search?q=Mark%20Copy&ensearch=1" style="display:flex; align-items:center;">
     <img src="./imgs/写作工具/Mark Copy.png" alt="POE" width="40" height="40" style="margin-right: 10px;"/>
     <div>
       <p style="margin: 0; font-weight: bold;">Mark Copy</p>
