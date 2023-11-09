@@ -5,7 +5,8 @@
       "runner": "nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "parallel": 10
+        "parallel": 10,
+        "accessToken": "YmQ0MzQwM2QtNjBlYi00M2Y1LWFkODQtOGVlZDc2NDczMmYxfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -46,6 +47,5 @@
   "workspaceLayout": {
     "appsDir": "apps",
     "libsDir": "packages"
-  },
-  "nxCloudAccessToken": "ZTYwZWU1YWUtM2E2ZC00MDRkLWE0ODQtZTg1YmQ3MWI0YmYwfHJlYWQtd3JpdGU="
+  }
 }
