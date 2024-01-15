@@ -1,19 +1,16 @@
 {
-  "name": "@draco-china/commitlint",
+  "name": "@dracon-china/commitlint",
   "version": "0.1.0",
   "description": "Standard shareable config for ESLint Commitlint",
-  "keywords": [
-    "commitlint",
-    "commitlint-config"
-  ],
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/spec/commitlint-config#readme",
+  "keywords": ["commitlint", "commitlint-config"],
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/spec/commitlint-config#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/spec/commitlint-config"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/spec/commitlint-config"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "main": "index.js",
@@ -38,7 +35,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]

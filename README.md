@@ -1,4 +1,4 @@
-# 🌟 Draco Lab | [在线预览](https://draco.icu)
+# 🌟 Dracon Lab | [在线预览](https://draco.icu)
 
 前端组件库、工具类、TypeScript 类型、Hooks、开发环境及规范配置文档
 

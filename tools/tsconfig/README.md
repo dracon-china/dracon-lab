@@ -1,4 +1,4 @@
-# `@draco-china/tsconfig`
+# `@dracon-china/tsconfig`
 
 > 本包提供了《文档规约》配套的 [tsconfig 可共享配置](https://www.npmjs.com/package/tsconfig#optionsconfig)。
 
@@ -7,7 +7,7 @@
 除了本包，你需要同时安装 [typescript](https://www.npmjs.com/package/typescript)：
 
 ```bash
-npm install @draco-china/tsconfig typescript -D
+npm install @dracon-china/tsconfig typescript -D
 ```
 
 ## 使用
@@ -16,7 +16,7 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/base"
+  "extends": "@dracon-china/tsconfig/base"
 }
 ```
 
@@ -24,7 +24,7 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/node"
+  "extends": "@dracon-china/tsconfig/node"
 }
 ```
 
@@ -32,7 +32,7 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/next"
+  "extends": "@dracon-china/tsconfig/next"
 }
 ```
 
@@ -40,7 +40,7 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/nuxt"
+  "extends": "@dracon-china/tsconfig/nuxt"
 }
 ```
 
@@ -48,7 +48,7 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/taro"
+  "extends": "@dracon-china/tsconfig/taro"
 }
 ```
 
@@ -56,7 +56,7 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/react-library"
+  "extends": "@dracon-china/tsconfig/react-library"
 }
 ```
 
@@ -64,6 +64,6 @@ npm install @draco-china/tsconfig typescript -D
 
 ```json
 {
-  "extends": "@draco-china/tsconfig/vue-library"
+  "extends": "@dracon-china/tsconfig/vue-library"
 }
 ```

@@ -1,16 +1,16 @@
 {
-  "name": "@draco-china/docs",
+  "name": "@dracon-china/docs",
   "version": "0.1.0",
   "private": true,
   "description": "",
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/apps/docs#readme",
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/apps/docs#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/apps/docs"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/apps/docs"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]

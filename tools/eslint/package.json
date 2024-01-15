@@ -1,19 +1,16 @@
 {
-  "name": "@draco-china/eslint",
+  "name": "@dracon-china/eslint",
   "version": "0.1.0",
   "description": "Standard shareable config for ESLint",
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/eslint#readme",
+  "keywords": ["eslint", "eslint-config"],
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/tools/eslint#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/eslint"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/tools/eslint"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "main": "javascript/index.js",
@@ -49,7 +46,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]

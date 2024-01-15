@@ -1,4 +1,4 @@
-# `@draco-china/commitlint`
+# `@dracon-china/commitlint`
 
 > 本包提供了《Git 规约》配套的 [commitlint 可共享配置](https://commitlint.js.org/#/concepts-shareable-config)，用于对 git commit message 进行校验。
 
@@ -9,7 +9,7 @@
 ### npm
 
 ```bash
-npm install husky lint-staged @draco-china/commitlint -D
+npm install husky lint-staged @dracon-china/commitlint -D
 ```
 
 ## 使用
@@ -21,7 +21,7 @@ npm install husky lint-staged @draco-china/commitlint -D
 ```json
 {
   "commitlint": {
-    "extends": ["@draco-china/commitlint"]
+    "extends": ["@dracon-china/commitlint"]
   }
 }
 ```
@@ -32,7 +32,7 @@ npm install husky lint-staged @draco-china/commitlint -D
 
 ```javascript
 module.exports = {
-  extends: ['@draco-china/commitlint'],
+  extends: ['@dracon-china/commitlint'],
 };
 ```
 

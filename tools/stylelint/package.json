@@ -1,20 +1,16 @@
 {
-  "name": "@draco-china/stylelint",
+  "name": "@dracon-china/stylelint",
   "version": "0.1.0",
   "description": "Standard shareable config for Stylelint",
-  "keywords": [
-    "stylelint",
-    "stylelint-config",
-    "stylelint-config-standard"
-  ],
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/stylelint#readme",
+  "keywords": ["stylelint", "stylelint-config", "stylelint-config-standard"],
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/tools/stylelint#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/stylelint"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/tools/stylelint"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "main": "index.js",
@@ -45,7 +41,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]

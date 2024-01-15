@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": ["@draco-china/tsconfig/base"],
+  "extends": ["@dracon-china/tsconfig/base"],
   "compilerOptions": {
     "strict": true,
     "skipLibCheck": true,

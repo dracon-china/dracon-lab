@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('@draco-china/eslint/typescript'),
-  ignorePatterns: ['.eslintrc.js'],
+  ...require("@dracon-china/eslint/typescript"),
+  ignorePatterns: [".eslintrc.js"],
 };

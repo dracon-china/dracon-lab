@@ -1,19 +1,16 @@
 {
-  "name": "@draco-china/prettier",
+  "name": "@dracon-china/prettier",
   "version": "0.1.0",
   "description": "Standard shareable config for Prettier",
-  "keywords": [
-    "prettier",
-    "prettier-config"
-  ],
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/prettier#readme",
+  "keywords": ["prettier", "prettier-config"],
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/tools/prettier#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/prettier"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/tools/prettier"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "main": "index.js",
@@ -31,7 +28,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]

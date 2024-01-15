@@ -8,9 +8,9 @@ on:
     types:
       - closed
     paths:
-      - '**'
-      - '!apps/**'
-      - '!**/*.md'
+      - "**"
+      - "!apps/**"
+      - "!**/*.md"
 
   # push:
   #   branches:
@@ -79,7 +79,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
-          scope: '@${{ github.repository_owner }}'
+          scope: "@${{ github.repository_owner }}"
 
       - name: Install dependencies
         run: pnpm install
@@ -99,7 +99,7 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "Draco"
+          git config --global user.name "Dracon"
           git config --global user.email "draco.coder@gmail.com"
 
       - name: Publish to GitHub Package Registry

@@ -1,8 +1,8 @@
-import GiscusComponent from '@giscus/react';
-import { useThemeMode } from 'antd-style';
-import { useSiteData } from 'dumi';
-import ContentFooter from 'dumi-theme-antd-style/dist/slots/ContentFooter';
-import { memo } from 'react';
+import GiscusComponent from "@giscus/react";
+import { useThemeMode } from "antd-style";
+import { useSiteData } from "dumi";
+import ContentFooter from "dumi-theme-antd-style/dist/slots/ContentFooter";
+import { memo } from "react";
 
 export default memo(() => {
   const { isDarkMode } = useThemeMode();
@@ -20,9 +20,9 @@ export default memo(() => {
         reactionsEnabled="1"
         category="Q&A"
         categoryId="DIC_kwDOKlvNcs4Cae6g"
-        repo="draco-china/draco-lab"
+        repo="dracon-china/draco-lab"
         repoId="R_kgDOKlvNcg"
-        theme={isDarkMode ? 'dark_protanopia' : 'light_protanopia'}
+        theme={isDarkMode ? "dark_protanopia" : "light_protanopia"}
         {...giscus}
       />
       <ContentFooter />

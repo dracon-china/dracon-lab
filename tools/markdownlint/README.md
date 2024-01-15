@@ -1,4 +1,4 @@
-# `@draco-china/markdownlint`
+# `@dracon-china/markdownlint`
 
 > 本包提供了《文档规约》配套的 [markdownlint 可共享配置](https://www.npmjs.com/package/markdownlint#optionsconfig)。
 
@@ -7,7 +7,7 @@
 除了本包，你需要同时安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install @draco-china/markdownlint markdownlint -D
+npm install @dracon-china/markdownlint markdownlint -D
 ```
 
 ## 使用
@@ -16,6 +16,6 @@ npm install @draco-china/markdownlint markdownlint -D
 
 ```json
 {
-  "extends": "@draco-china/markdownlint"
+  "extends": "@dracon-china/markdownlint"
 }
 ```

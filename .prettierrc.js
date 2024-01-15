@@ -1,1 +1,1 @@
-module.exports = require('@draco-china/prettier');
+module.exports = require("@dracon-china/prettier");

@@ -1,4 +1,4 @@
-# `@draco-china/stylelint`
+# `@dracon-china/stylelint`
 
 > 本包提供了《CSS 编码规约》配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
 
@@ -7,7 +7,7 @@
 除了本包，你需要同时安装 [stylelint](https://www.npmjs.com/package/stylelint)：
 
 ```bash
-npm install @draco-china/stylelint stylelint -D
+npm install @dracon-china/stylelint stylelint -D
 ```
 
 ## 使用
@@ -16,6 +16,6 @@ npm install @draco-china/stylelint stylelint -D
 
 ```json
 {
-  "extends": "@draco-china/stylelint"
+  "extends": "@dracon-china/stylelint"
 }
 ```

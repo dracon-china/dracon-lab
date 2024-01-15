@@ -1,21 +1,21 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
+import { existsSync, readFileSync, writeFileSync } from "fs";
+import { join } from "path";
 
 (async function main() {
   const cwd = process.env.INIT_CWD;
   // 是否安装了 prettier
-  if (!existsSync(join(cwd, 'node_modules/prettier'))) return console.error('请先安装 prettier');
+  if (!existsSync(join(cwd, "node_modules/prettier"))) return console.error("请先安装 prettier");
   // 是否存在 .prettierrc.js 文件
-  if (!existsSync(join(cwd, '.prettierrc.js'))) {
+  if (!existsSync(join(cwd, ".prettierrc.js"))) {
     writeFileSync(
-      join(cwd, '.prettierrc.js'),
-      `module.exports = require('@draco-china/prettier');\n`,
+      join(cwd, ".prettierrc.js"),
+      `module.exports = require('@dracon-china/prettier');\n`
     );
   }
   // 是否存在 .editorconfig 文件
-  if (!existsSync(join(cwd, '.editorconfig'))) {
+  if (!existsSync(join(cwd, ".editorconfig"))) {
     writeFileSync(
-      join(cwd, '.editorconfig'),
+      join(cwd, ".editorconfig"),
       `# Editor configuration, see http://editorconfig.org
 root = true
 
@@ -29,16 +29,16 @@ trim_trailing_whitespace = true
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
-`,
+`
     );
   }
 
   // 是否存在 .prettierignore 文件
-  if (!existsSync(join(cwd, '.prettierignore'))) {
+  if (!existsSync(join(cwd, ".prettierignore"))) {
     // 读取 .gitignore 文件
-    const gitignore = readFileSync(join(cwd, '.gitignore')).toString();
+    const gitignore = readFileSync(join(cwd, ".gitignore")).toString();
     writeFileSync(
-      join(cwd, '.prettierignore'),
+      join(cwd, ".prettierignore"),
       `${gitignore}
 
 # Others
@@ -46,7 +46,7 @@ LICENSE
 .npmrc
 .editorconfig
 .*ignore
-`,
+`
     );
   }
 })();

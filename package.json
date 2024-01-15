@@ -1,16 +1,16 @@
 {
-  "name": "@draco-china/source",
+  "name": "@dracon-china/source",
   "version": "0.0.0",
   "private": true,
   "description": "组件库/工具类/Hooks/开发环境/规范配置",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab"
+    "url": "https://github.com/dracon-china/draco-lab"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "scripts": {
@@ -18,8 +18,8 @@
     "clean": "lerna clean --yes && rm -rf node_modules",
     "commit": "git-cz",
     "deps": "pnpm up -i -r -L",
-    "docs:build": "nx run @draco-china/docs:build",
-    "docs:start": "nx run @draco-china/docs:start",
+    "docs:build": "nx run @dracon-china/docs:build",
+    "docs:start": "nx run @dracon-china/docs:start",
     "format": "prettier -c --write \"**/*\"",
     "graph:build": "nx graph --file=apps/graph/index.html",
     "graph:start": "nx graph",
@@ -29,12 +29,12 @@
     "test:coverage": "nx run-many -t test:coverage"
   },
   "devDependencies": {
-    "@draco-china/commitlint": "workspace:^",
-    "@draco-china/eslint": "workspace:^",
-    "@draco-china/markdownlint": "workspace:^",
-    "@draco-china/prettier": "workspace:^",
-    "@draco-china/stylelint": "workspace:^",
-    "@draco-china/tsconfig": "workspace:^",
+    "@dracon-china/commitlint": "workspace:^",
+    "@dracon-china/eslint": "workspace:^",
+    "@dracon-china/markdownlint": "workspace:^",
+    "@dracon-china/prettier": "workspace:^",
+    "@dracon-china/stylelint": "workspace:^",
+    "@dracon-china/tsconfig": "workspace:^",
     "lerna": "^7.4.2",
     "nx": "^17.0.2",
     "nx-cloud": "^16.5.2"
@@ -45,7 +45,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ],

@@ -1,19 +1,16 @@
 {
-  "name": "@draco-china/markdownlint",
+  "name": "@dracon-china/markdownlint",
   "version": "0.1.0",
   "description": "Standard shareable config for Markdownlint.",
-  "keywords": [
-    "markdownlint",
-    "markdownlint-config"
-  ],
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/markdownlint#readme",
+  "keywords": ["markdownlint", "markdownlint-config"],
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/tools/markdownlint#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/markdownlint"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/tools/markdownlint"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "main": "index.json",
@@ -32,7 +29,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]

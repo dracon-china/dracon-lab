@@ -1,19 +1,16 @@
 {
-  "name": "@draco-china/tsconfig",
+  "name": "@dracon-china/tsconfig",
   "version": "0.1.0",
   "description": "Standard shareable config for TypeScript",
-  "keywords": [
-    "tsconfig",
-    "typescript-config"
-  ],
-  "homepage": "https://github.com/draco-china/draco-lab/blob/main/tools/tsconfig#readme",
+  "keywords": ["tsconfig", "typescript-config"],
+  "homepage": "https://github.com/dracon-china/draco-lab/blob/main/tools/tsconfig#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/draco-china/draco-lab/blob/main/tools/tsconfig"
+    "url": "https://github.com/dracon-china/draco-lab/blob/main/tools/tsconfig"
   },
   "license": "MIT",
   "author": {
-    "name": "draco-china",
+    "name": "dracon-china",
     "email": "draco.coder@gmail.com"
   },
   "scripts": {
@@ -28,7 +25,7 @@
   },
   "authors": [
     {
-      "name": "draco-china",
+      "name": "dracon-china",
       "email": "draco.coder@gmail.com"
     }
   ]
